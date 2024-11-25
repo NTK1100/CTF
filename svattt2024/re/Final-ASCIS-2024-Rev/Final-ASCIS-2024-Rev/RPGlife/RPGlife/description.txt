@@ -1,0 +1,5 @@
+Relax with the game & Rescue the ASCIS Data Center and get the secret flag. 👌
+
+https://drive.google.com/file/d/1j9bQof02V96Q0SDDe_AwQN0h9dAZz1mZ/view?usp=drive_link
+
+Format: ASCIS{this_is_a_flag}

@@ -1,0 +1,17 @@
+$ gdb ./chall
+
+pwndbg> disassemble main
+pwndbg> b *main+278
+pwndbg> r
+
+# lúc này ta thấy địa chỉ RBP là 0x0x7fffffffdcb0
+# set 	0x7fffffffdca0 - 4 = 5
+# ==>	0x7fffffffdc9c =
+
+pwndbg> set *0x7fffffffdd9c = 5
+pwndbg> c
+Continuing.
+Nice!
+
+DH{389998e56e90e8eb34238948469cecd6dd89c04dce359c345e0b2f3ef9edc66a}
+[Inferior 1 (process 141100) exited normally]

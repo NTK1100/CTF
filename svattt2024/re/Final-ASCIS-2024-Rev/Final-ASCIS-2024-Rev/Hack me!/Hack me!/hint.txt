@@ -1,0 +1,4 @@
+- the uncompressed password-protected zip file is here: flag , download the file and try to figure out how to decrypt it.
+- The first number is: 544047215
+- The second number is : 369586174
+- The third number is : 635441828

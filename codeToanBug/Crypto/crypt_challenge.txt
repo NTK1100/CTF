@@ -1,0 +1,8 @@
+Challenge: Decrypt the following encoded message.
+
+Encrypted Message:
+VXB{Nzy1_Mm4g_B7j}
+
+Hint: 'Numbers hide within the mystery.'
+
+Flag format: CTB{flag_name}

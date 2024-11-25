@@ -1,0 +1,53 @@
+from flask import Flask, render_template, Response, request
+import string;
+import random;
+
+app = Flask(__name__);
+
+flag = open('flag.txt', 'r').read().strip()
+# flag format: PIS{fake_flag}
+
+
+
+def encryped_flag():
+    xored = '';
+    key = ''.join(random.choices(string.ascii_letters + string.digits, k = 5));
+    
+    for i in range(len(flag)):
+        xored += chr(ord(flag[i]) ^ ord(key[i % len(key)]));
+    
+    hex_encoded = xored.encode().hex();
+
+    return hex_encoded;
+
+
+
+
+@app.route('/', methods = ['GET', 'POST'])
+def index():
+    if request.method == 'GET':
+        return render_template('index.html', flag_encrypted = encryped_flag());
+    if request.method == 'POST':
+        input = request.form['flag'];
+
+        if input == flag:
+            result = "Bạn có thể dùng flag này để nộp 😻";			//PIS{xxx_xo_Xo_xO_XO_XORRR_xxx}
+        else:
+            result = "Nope nope 😐";
+
+    return render_template('index.html', flag_encrypted = encryped_flag(), result = result);
+
+
+
+
+@app.route('/src')
+def src():
+    src = open(__file__, 'r', encoding='utf-8').read();
+    return Response(src, mimetype='text/plain');
+
+
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80);
+1

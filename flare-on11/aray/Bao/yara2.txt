@@ -1,0 +1,14 @@
+hash.crc32(8, 2) == 0x61089c5c
+hash.crc32(34, 2) == 0x5888fc1b
+hash.crc32(63, 2) == 0x66715919
+hash.sha256(14, 2) == "403d5f23d149670348b147a15eeb7010914701a7e99aad2e43f90cfa0325c76f"
+
+hash.sha256(56, 2) == "593f2d04aab251f60c9e4b8bbc1e05a34e920980ec08351a18459b2bc7dbf2f6"(fl)
+
+hash.md5(0, 2) == "89484b14b36a8d5329426a3d944d2983" (ru)
+
+hash.crc32(78, 2) == 0x7cab8d64
+hash.md5(76, 2) == "f98ed07a4d5f50f7de1410d905f1477f"(io)
+hash.md5(50, 2) == "657dae0913ee12be6fb2a6f687aae1c7"(3A)
+hash.md5(32, 2) == "738a656e8e8ec272ca17cd51e12f558b"(ul)
+hash.md5(0, filesize) == "b7dc94ca98aa58dabb5404541c812db2"

@@ -1,0 +1,46 @@
+Sep  5 08:32:01 localhost sshd[1000]: Invalid user test from 192.168.1.101 port 54020
+Sep  5 08:32:01 localhost sshd[1000]: input_userauth_request: invalid user test [preauth]
+Sep  5 08:32:05 localhost sshd[1001]: Failed password for invalid user guest from 192.168.1.100 port 54022 ssh2
+Sep  5 08:36:13 localhost sshd[1002]: Invalid user admin from 192.168.1.101 port 54023
+Sep  5 08:36:13 localhost sshd[1002]: input_userauth_request: invalid user admin [preauth]
+Sep  5 08:36:45 localhost sshd[1003]: Failed password for invalid user admin from 192.168.1.101 port 54023 ssh2
+Sep  5 08:37:10 localhost sshd[1004]: Invalid user root from 192.168.1.102 port 54024
+Sep  5 08:37:13 localhost sshd[1004]: Failed password for invalid user root from 192.168.1.102 port 54024 ssh2
+Sep  5 08:37:15 localhost sshd[1005]: Invalid user ftpuser from 192.168.1.103 port 54025
+Sep  5 08:38:09 localhost sshd[1006]: Accepted password for valid_user from 192.168.1.103 port 54026 ssh2
+Sep  5 08:38:12 localhost sshd[1006]: pam_unix(sshd:session): session opened for user valid_user by (uid=0)
+Sep  5 08:38:15 localhost sshd[1007]: Invalid user support from 192.168.1.104 port 54027
+Sep  6 09:20:32 localhost sshd[1010]: Failed password for root from 192.168.1.105 port 54030 ssh2
+Sep  6 09:21:03 localhost sshd[1011]: Failed password for root from 192.168.1.106 port 54031 ssh2
+Sep  6 09:21:34 localhost sshd[1012]: Failed password for root from 192.168.1.107 port 54032 ssh2
+Sep  6 09:22:05 localhost sshd[1013]: Failed password for root from 192.168.1.108 port 54033 ssh2
+Sep  6 09:24:18 localhost sshd[1014]: Failed password for invalid user nobody from 192.168.1.109 port 54034 ssh2
+Sep  6 09:24:22 localhost sshd[1015]: Failed password for invalid user test2 from 192.168.1.110 port 54035 ssh2
+Sep  6 09:24:33 localhost sshd[1016]: Authentication bypass attempt detected for user root from 192.168.1.111 port 54036 ssh2
+Sep  6 09:24:40 localhost sshd[1017]: Warning: Unusual authentication bypass detected from 192.168.1.112 port 54037
+Sep  7 10:30:12 localhost sshd[1020]: Invalid user backup from 192.168.1.111 port 54036
+Sep  7 10:35:28 localhost sshd[1021]: Invalid user git from 192.168.1.112 port 54037
+Sep  7 10:37:01 localhost sshd[1022]: Invalid user deploy from 192.168.1.113 port 54038
+Sep  7 10:40:35 localhost sshd[1023]: Accepted password for root from 192.168.1.110 port 54034 ssh2
+Sep  7 10:40:40 localhost sshd[1023]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  8 11:10:15 localhost sshd[1030]: Invalid user service from 192.168.1.114 port 54039
+Sep  8 11:15:29 localhost sshd[1031]: Failed password for root from 192.168.1.115 port 54036 ssh2
+Sep  8 11:16:47 localhost sshd[1032]: Failed password for root from 192.168.1.115 port 54037 ssh2
+Sep  8 11:17:05 localhost sshd[1033]: Invalid user dbadmin from 192.168.1.116 port 54040
+Sep  8 11:18:02 localhost sshd[1034]: Failed password for root from 192.168.1.115 port 54038 ssh2
+Sep  8 11:19:15 localhost sshd[1035]: Failed password for admin from 192.168.1.117 port 54041 ssh2
+Sep  8 11:20:10 localhost sshd[1036]: Failed password for root from 192.168.1.115 port 54039 ssh2
+Sep  8 11:21:30 localhost sshd[1037]: Invalid user user from 192.168.1.118 port 54042
+Sep  8 11:22:45 localhost sshd[1038]: Failed password for user from 192.168.1.118 port 54043 ssh2
+Sep  9 12:01:02 localhost sshd[1040]: Invalid user postgres from 192.168.1.119 port 54044
+Sep  9 12:05:14 localhost sshd[1041]: Failed password for postgres from 192.168.1.119 port 54045 ssh2
+Sep  9 12:06:27 localhost sshd[1042]: Invalid user mysql from 192.168.1.120 port 54046
+Sep  9 12:09:30 localhost sshd[1043]: Failed password for invalid user mysql from 192.168.1.120 port 54046 ssh2
+Sep  9 12:10:45 localhost sshd[1044]: Warning: SSH protocol mismatch or unusual activity detected from 192.168.1.121 port 54047
+Sep  9 12:15:42 localhost sshd[1045]: Failed password for invalid user apache from 192.168.1.121 port 54048 ssh2
+Sep  9 12:20:01 localhost sshd[1046]: Failed password for root from 192.168.1.122 port 54049 ssh2
+Sep  9 12:30:15 localhost sshd[1047]: Accepted password for guest from 192.168.1.123 port 54050 ssh2
+Sep  9 12:30:20 localhost sshd[1047]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Sep  9 12:35:11 localhost sshd[1048]: Failed password for root from 192.168.1.124 port 54051 ssh2
+Sep  9 12:40:15 localhost sshd[1049]: Invalid user admin2 from 192.168.1.125 port 54052
+Sep  9 12:45:33 localhost sshd[1050]: Failed password for admin2 from 192.168.1.125 port

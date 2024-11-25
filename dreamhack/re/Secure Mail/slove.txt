@@ -1,0 +1,23 @@
+// Thay thế alert bằng console.log để hiển thị thông báo sai
+window.alert = function(val) { console.log("Wrong Birthday!!!"); return false; };
+
+// Định dạng regex cho ngày hợp lệ
+let format = /^([0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1]))$/;
+
+// Hàm kiểm tra và xác nhận
+function detector(val) {
+    if (format.test(val)) { // Chỉ kiểm tra giá trị hợp lệ
+        if (_0x9a220(val)) { // Nếu hàm này trả về đúng
+            console.log("Ngày hợp lệ và chính xác:", val); // In ra kết quả đúng
+            return true; // Dừng lại nếu tìm được giá trị chính xác
+        }
+    }
+    return false; // Nếu không hợp lệ hoặc không khớp
+}
+
+// Lặp qua các giá trị và tìm ngày đúng
+for (let i = 809000; i < 999999; i++) {
+    let dateStr = String(i).padStart(6, '0'); // Đảm bảo định dạng chuỗi 6 ký tự
+    if (detector(dateStr)) break; // Dừng khi tìm được ngày đúng
+}
+==> 960229

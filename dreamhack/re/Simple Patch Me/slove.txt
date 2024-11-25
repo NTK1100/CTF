@@ -1,0 +1,7 @@
+$ gdb ./simple_patch_me
+$ break *0x401376
+$ run
+
+## dword_40404C
+$ set {int}0x40404C = 0x2238
+$ continue
